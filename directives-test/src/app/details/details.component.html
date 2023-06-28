@@ -1,0 +1,5 @@
+<button type="button" (click)="onBtnClick()">Show/Hide</button>
+<p *ngIf="displayParagraph">This is a magic paragraph</p>
+<div *ngFor="let counter of btnClickCounter" [ngStyle]="{'background-color': counter >= 5 ? 'blue' : 'white' }" >
+    <p [ngClass]="{'text-white': counter>= 5}">{{counter}}</p>
+</div>
