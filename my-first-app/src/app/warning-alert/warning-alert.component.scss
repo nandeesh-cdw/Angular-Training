@@ -1,0 +1,11 @@
+.warning-alert{
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    background-color: yellow;
+    margin:10px;
+    .warning-text{
+        color: black;
+        
+    }
+}
