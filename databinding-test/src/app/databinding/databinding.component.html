@@ -1,0 +1,7 @@
+<input type="text" placeholder="username" [(ngModel)]="userName" />
+<p *ngIf="showUsername;else noUsername">{{userName}}</p>
+<ng-template #noUsername>
+    <p>No username added </p>
+</ng-template>
+<button type="button" (click)='resetUsername()' [disabled]= "userName==''">Reset</button>
+<button type="button" (click)='addUsername()' [disabled]= "userName==''">Add</button>
